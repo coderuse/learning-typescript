@@ -1,0 +1,34 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "0.1.0",
+  "command": "cmd",
+  "isShellCommand": true,
+  "showOutput": "silent",
+  "args": [
+    "/C"
+  ],
+  "tasks": [
+    {
+      "taskName": "Build TypeScript",
+      "suppressTaskName": true,
+      "isBuildCommand": true,
+      "args": [
+        "tsc",
+        "-p",
+        "."
+      ],
+      "problemMatcher": "$tsc"
+    },
+    {
+      "taskName": "Run js file with node",
+      "suppressTaskName": true,
+      "isTestCommand": true,
+      "args": [
+        "node",
+        "./js/typescript.js"
+      ],
+      "showOutput": "always"
+    }
+  ]
+}
