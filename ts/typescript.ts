@@ -3,7 +3,7 @@ var student = {
   lastName: 'Doe'
 };
 
-function doSomething(obj: {firstName: string; lastName: string;}) {
+function doSomething(obj: {firstName: string; lastName: string; greet: () => void;}) {
   
 }
 
