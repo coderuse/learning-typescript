@@ -22,8 +22,14 @@ class Student {
     
     return 'Hello, ' + this.fullName + '!!!';
   }
+  
+  admission = function () {
+    
+  };
 }
 
-var student = new Student('John', 'Doe');
+class Graduate extends Student {
+  
+}
 
-console.log(student.fullName);
+var g = new Graduate();
