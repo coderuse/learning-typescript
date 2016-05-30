@@ -1,12 +1,15 @@
 interface IStudent {
   firstName: string;
   lastName: string;
-  greet: () => void;
+  greet(): void;
 };
 
 var student: IStudent = {
   firstName: 'John',
-  lastName: 'Doe'
+  lastName: 'Doe',
+  greet: () => {
+    
+  }
 };
 
 var graduateStudent = {
@@ -20,5 +23,8 @@ function doSomething(obj: IStudent) {
 
 doSomething({
   firstName: 'Jane',
-  lastName: 'Doe'
+  lastName: 'Doe',
+  greet: function () {
+    
+  }
 });
