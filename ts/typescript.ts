@@ -24,4 +24,4 @@ var student = new Student('John', 'Doe');
 
 student.publicMethod();
 
-console.log(student.fullName);
+console.log(student['fullName']);
