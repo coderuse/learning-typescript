@@ -1,6 +1,7 @@
 var student = {
   firstName: "John",
-  lastName: "Doe"
+  lastName: "Doe",
+  greet: function () {}
 };
 
 student.greet = function () {
