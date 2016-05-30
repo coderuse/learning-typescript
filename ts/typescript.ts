@@ -4,5 +4,6 @@ var student = {
 };
 
 student = {
-  firstName: "Jane"
+  firstName: "Jane",
+  lastName: "Doe"
 };
