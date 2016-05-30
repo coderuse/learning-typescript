@@ -1,10 +1,20 @@
+interface IStudent {
+  firstName: string;
+  lastName: string;
+};
+
 var student = {
   firstName: 'John',
   lastName: 'Doe'
 };
 
-function doSomething(obj: {firstName: string; lastName: string; greet?: () => void;}) {
-  
+var graduateStudent = {
+  firstName: "Samara",
+  lastName: "Braithweight"
+}
+
+function doSomething(obj: IStudent) {
+
 }
 
 doSomething({
