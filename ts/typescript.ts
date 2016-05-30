@@ -16,7 +16,8 @@ class Student {
       return 'Hello, ' + student + '!!!';
     }
     else if (student instanceof Student) {
-      return 'Hello, ' + student.fullName + '!!!';
+      var s = <Student> student;
+      return 'Hello, ' + s.fullName + '!!!';
     }
     
     return 'Hello, ' + this.fullName + '!!!';
