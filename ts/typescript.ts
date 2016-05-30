@@ -1,9 +1,10 @@
 interface IStudent {
   firstName: string;
   lastName: string;
+  greet: () => void;
 };
 
-var student = {
+var student: IStudent = {
   firstName: 'John',
   lastName: 'Doe'
 };
