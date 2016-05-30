@@ -1,6 +1,6 @@
 class Student {
   
-  get fullName() {
+  private get fullName() {
     return this.firstName + ' ' + this.lastName;
   }
   
@@ -8,7 +8,7 @@ class Student {
   }
   
   greet() {
-    return 'Hello, ' + this.firstName + ' ' + this.lastName + '!!!';
+    return 'Hello, ' + this.fullName + '!!!';
   }
   
   publicMethod = function () {
@@ -23,3 +23,5 @@ class Student {
 var student = new Student('John', 'Doe');
 
 student.publicMethod();
+
+console.log(student.fullName);
