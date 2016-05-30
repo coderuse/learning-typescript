@@ -3,8 +3,12 @@ var student = {
   lastName: "Doe"
 };
 
-function doSomething(obj) {
+function doSomething(obj: {firstName: string; lastName: string;}) {
   
 }
 
 doSomething(student);
+
+doSomething({
+  
+});
