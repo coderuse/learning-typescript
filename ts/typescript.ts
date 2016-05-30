@@ -5,4 +5,12 @@ class Student {
   greet() {
     return 'Hello, ' + this.firstName + ' ' + this.lastName + '!!!';
   };
+  
+  publicMethod = function () {
+    
+  }
 }
+
+var student = new Student();
+
+student.publicMethod();
