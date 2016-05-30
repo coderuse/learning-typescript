@@ -1,5 +1,9 @@
 class Student {
   
+  get fullName() {
+    return this.firstName + ' ' + this.lastName;
+  }
+  
   constructor(public firstName: string, public lastName: string) {
   }
   
