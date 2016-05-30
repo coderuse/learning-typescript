@@ -6,7 +6,7 @@ class Student {
     return 'Hello, ' + this.firstName + ' ' + this.lastName + '!!!';
   };
   
-  publicMethod = function () {
+  public publicMethod = function () {
     
   }
 }
