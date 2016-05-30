@@ -11,6 +11,14 @@ class Student {
   greet(firstName: string, lastName: string): string;
   greet(student: Student): string;
   greet(student?) {
+    
+    if (typeof student === 'string') {
+      return 'Hello, ' + student + '!!!';
+    }
+    else if (student instanceof Student) {
+      return 'Hello, ' + student.fullName + '!!!';
+    }
+    
     return 'Hello, ' + this.fullName + '!!!';
   }
 }
