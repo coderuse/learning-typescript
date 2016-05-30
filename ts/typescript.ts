@@ -29,6 +29,11 @@ class Student {
 }
 
 class Graduate extends Student {
+  
+  get fullName() {
+    return super.fullName + ', ' + this.subject;
+  }
+  
   constructor(firstName: string, lastName: string, public subject: string) {
     super(firstName, lastName);
   }
