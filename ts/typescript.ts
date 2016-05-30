@@ -32,4 +32,5 @@ class Graduate extends Student {
   
 }
 
-var g = new Graduate();
+var g = new Graduate('Samar', 'Navavi');
+console.log(g.fullName);
