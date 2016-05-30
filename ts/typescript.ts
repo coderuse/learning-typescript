@@ -7,6 +7,9 @@ class Student {
   constructor(public firstName: string, public lastName: string) {
   }
   
+  greet(): string;
+  greet(firstName: string, lastName: string): string;
+  greet(student: Student): string;
   greet() {
     return 'Hello, ' + this.fullName + '!!!';
   }
