@@ -4,13 +4,19 @@ class Student {
   
   greet() {
     return 'Hello, ' + this.firstName + ' ' + this.lastName + '!!!';
+  }
+  
+  publicMethod = function () {
+    
   };
   
-  public publicMethod = function () {
+  private privateMethod = function () {
     
-  }
+  };
 }
 
 var student = new Student();
 
 student.publicMethod();
+
+student.privateMethod();
