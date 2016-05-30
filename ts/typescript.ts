@@ -2,6 +2,11 @@ class Student {
   firstName: string;
   lastName: string;
   
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  
   greet() {
     return 'Hello, ' + this.firstName + ' ' + this.lastName + '!!!';
   }
@@ -15,8 +20,6 @@ class Student {
   };
 }
 
-var student = new Student();
+var student = new Student('John', 'Doe');
 
 student.publicMethod();
-
-student.privateMethod();
