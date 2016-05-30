@@ -29,8 +29,10 @@ class Student {
 }
 
 class Graduate extends Student {
-  
+  constructor(firstName: string, lastName: string, public subject: string) {
+    super(firstName, lastName);
+  }
 }
 
-var g = new Graduate('Samar', 'Navavi');
+var g = new Graduate('Samar', 'Navavi', 'Current Warfare');
 console.log(g.fullName);
