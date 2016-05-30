@@ -3,7 +3,8 @@ var student = {
   lastName: "Doe"
 };
 
-student = {
-  firstName: "Jane",
-  lastName: "Doe"
-};
+function doSomething(obj) {
+  
+}
+
+doSomething(student);
