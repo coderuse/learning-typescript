@@ -1,9 +1,8 @@
 var student = {
   firstName: "John",
-  lastName: "Doe",
-  greet: () => {}
+  lastName: "Doe"
 };
 
-student.greet = function () {
-  
+student = {
+  firstName: "Jane"
 };
