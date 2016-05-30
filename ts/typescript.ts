@@ -9,5 +9,8 @@ function doSomething(obj: {firstName: string; lastName: string; greet: () => voi
 
 doSomething({
   firstName: 'Jane',
-  lastName: 'Doe'
+  lastName: 'Doe',
+  greet: function () {
+    
+  }
 });
