@@ -1,6 +1,6 @@
 class Student {
   
-  private get fullName() {
+  get fullName() {
     return this.firstName + ' ' + this.lastName;
   }
   
@@ -10,21 +10,11 @@ class Student {
   greet(): string;
   greet(firstName: string, lastName: string): string;
   greet(student: Student): string;
-  greet() {
+  greet(student?) {
     return 'Hello, ' + this.fullName + '!!!';
   }
-  
-  publicMethod = function () {
-    
-  };
-  
-  private privateMethod = function () {
-    
-  };
 }
 
 var student = new Student('John', 'Doe');
 
-student.publicMethod();
-
-console.log(student['fullName']);
+console.log(student.fullName);
